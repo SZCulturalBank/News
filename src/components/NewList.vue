@@ -120,7 +120,7 @@ export default {
   },
   mounted() {
     const self = this;
-    Axios.get('News/static/db.json')
+    Axios.get('./static/db.json')
       .then(response => {
         const {
           title,
