@@ -26,7 +26,7 @@
 
     <hr class="red">
 
-    <section class="row tn-article-body flex" v-for="(item, index) in traditionalMedia" :key="index">
+    <section class="row tn-article-body flex" v-for="(item, index) in traditionalMedia" :key="index+'-1'">
       <div class="left">
         <img class="left-img" :src="item.picture" />
       </div>
@@ -54,13 +54,13 @@
 
     <hr class="red">
 
-    <section class="row tn-article-body flex">
+    <section class="row tn-article-body flex" v-for="(item, index) in selfMedia" :key="index+'-2'">
       <div class="left">
-        <img class="left-img" src="../assets/rmrb.png" />
+        <img class="left-img" :src="item.picture" />
       </div>
       <div class="right">
-        <a class="right-link" target="_blank" href="https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274">
-          《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》
+        <a class="right-link" target="_blank" :href="item.link">
+          {{item.text}}
         </a>
       </div>
     </section>
@@ -88,19 +88,19 @@
 </template>
 
 <script>
-import Axios from "axios";
-import Moment from "moment";
+import Axios from 'axios';
+import Moment from 'moment';
 export default {
-  name: "NewList",
+  name: 'NewList',
   data() {
     return {
-      selfTextLeft: "",
-      selfTextRight: "",
-      traditionalTextLeft: "",
-      traditionalTextRight: "",
-      author: "",
-      title: "",
-      date: "",
+      selfTextLeft: '',
+      selfTextRight: '',
+      traditionalTextLeft: '',
+      traditionalTextRight: '',
+      author: '',
+      title: '',
+      date: '',
 
       traditionalMedia: [],
       selfMedia: []
@@ -108,14 +108,31 @@ export default {
   },
   computed: {
     today: () => {
-      return this.date || Moment().format('L').split('/').reverse().join('-');
+      return (
+        this.date ||
+        Moment()
+          .format('L')
+          .split('/')
+          .reverse()
+          .join('-')
+      );
     }
   },
   mounted() {
     const self = this;
-    Axios.get("static/db.json")
-      .then((response) => {
-        const {title,date,author,selfTextLeft,selfTextRight,traditionalTextLeft,traditionalTextRight,traditionalMedia,selfMedia} = response.data;
+    Axios.get('News/static/db.json')
+      .then(response => {
+        const {
+          title,
+          date,
+          author,
+          selfTextLeft,
+          selfTextRight,
+          traditionalTextLeft,
+          traditionalTextRight,
+          traditionalMedia,
+          selfMedia
+        } = response.data;
         this.title = title;
         this.date = date;
         this.author = author;
@@ -148,7 +165,7 @@ export default {
 }
 .title-l:before,
 .title-r:before {
-  content: "";
+  content: '';
   width: 12px;
   height: 12px;
   border-top: 3px solid rgb(249, 110, 87);
@@ -159,7 +176,7 @@ export default {
 }
 .title-l:after,
 .title-r:after {
-  content: "";
+  content: '';
   width: 12px;
   height: 12px;
   border-bottom: 3px solid rgb(249, 110, 87);
@@ -207,7 +224,7 @@ export default {
   margin: 15px 0;
   padding: 0 6px;
 }
-.margin45{
+.margin45 {
   margin-top: 45px;
 }
 </style>

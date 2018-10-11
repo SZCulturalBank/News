@@ -6,31 +6,31 @@
   "traditionalTextRight": "报道标题",
 
   "traditionalMedia": [{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   }],
@@ -38,23 +38,23 @@
   "selfTextLeft": "自媒体",
   "selfTextRight": "报道标题",
   "selfMedia": [{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   },{
-    "picture": "static/img/rmrb.png",
+    "picture": "./News/static/img/rmrb.png",
     "text": "《深圳文化创新发展又有新动作，令人期待的文化银行来啦！》",
     "link": "https://app.peopleapp.com/Api/600/DetailApi/shareArticle?type=0&article_id=2001274"
   }]
